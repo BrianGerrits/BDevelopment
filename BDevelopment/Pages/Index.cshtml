@@ -1,0 +1,29 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    string GithubProfile = "https://github.com/BrianGerrits";
+}
+
+<div class="container">
+        <h1 class="display-4 welcometext">Welcome to BDevelopment.</h1>
+        <p class="jobtitle">Brian Gerrits - dotNET &amp; Front-End Developer.</p>
+
+        <div class="blocks row mx-md-n5">
+            <div class="col-md-4">
+                <div class="block-1">
+                    <img class="code" src="img/html-icon-small.png" />
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="block-2">
+                    <a href="@GithubProfile"><img class="github" src="img/github-icon-small.png" /></a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="block-3">
+                    <a asp-page="/Contact"></a><img class="contact" src="img/contact-icon-small.png" />
+                </div>
+            </div>
+        </div>
+    </div>
